@@ -487,7 +487,7 @@ video {
 }
 
 #f3 h3 {
-  font-size: 1.6vw;
+  font-size: 1.5vw;
   white-space: nowrap;
   text-transform: uppercase;
   color: #fff;
@@ -495,7 +495,7 @@ video {
   margin-bottom: 8px;
 }
 #f4 h4 {
-  font-size: 1vw;
+  font-size: 1.5vw;
   white-space: nowrap;
   text-transform: uppercase;
   color: #fff;
@@ -526,6 +526,7 @@ video {
   .righttone{
     flex-direction: column-reverse;
   }
+
   .elem{
     min-width: 20%;
     
@@ -536,6 +537,8 @@ video {
     padding: 20px;
   }
   #cards-container{
+    margin-top: 250px;
+    gap: 20px;
     flex-direction: column;
     width: 100%;
   }

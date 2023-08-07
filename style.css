@@ -91,6 +91,7 @@ video {
 #page1 {
   height: 100vh;
   width: 100%;
+  
   position: relative;
   display: flex;
   align-items: center;
@@ -129,12 +130,7 @@ video {
   
 }
 
-.available-in{
- 
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-}
+
 #page1 #arrow {
   height: 250px;
   width: 250px;
@@ -158,6 +154,12 @@ video {
   background-color: #ffc700;
 }
 
+.available-in{
+ 
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
 
 #page2 {
   min-height: 100vh;
@@ -177,6 +179,7 @@ video {
   display: none;
 }
 #scroller-in {
+  height: 50vh;
   display: inline-block;
   white-space: nowrap;
   animation-name: scroll;
@@ -227,25 +230,31 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  
 }
 .righttone{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+
 }
+
 #about-us img {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   border-radius: 20px;
   object-fit: cover;
 }
 #about-us-in {
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 #about-us-in h3 {
+ text-align: center;
+ display: flex;
+ justify-content: center;
+
   color: #ffc700;
   font-size: 54px;
   font-weight: 800;
@@ -258,17 +267,19 @@ video {
 
 #cards-container {
   /* background-color: red; */
-  height: 80vh;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* justify-content: space-between; */
   gap: 70px;
   position: relative;
   z-index: 10;
 }
 .card {
-  height: 80%;
-  width: 24%;
+  height: 30em;
+  width: 25em;
   /* background-color: blue; */
   border-radius: 20px;
   background-size: cover;
@@ -381,7 +392,7 @@ video {
 }
 #page4 {
   margin-top: 80px;
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -390,8 +401,8 @@ video {
   position: relative;
 }
 .elem {
-  height: 70%;
-  width: 26%;
+  height: 15em;
+  width: 25em;
   overflow: hidden;
   border-radius: 20px;
   position: relative;
@@ -427,7 +438,7 @@ video {
   scale: 1;
 }
 #page4 h1 {
-  font-size: 6.4vw;
+  font-size: 7vw;
   position: absolute;
   top: -15%;
   font-weight: 900;
@@ -436,7 +447,7 @@ video {
   -webkit-text-stroke: 2px #fff;
 }
 #footer {
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   background: linear-gradient(to left bottom, #e3c011 0%, #000000 80%);
   position: relative;
@@ -491,4 +502,67 @@ video {
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 8px;
+}
+
+
+@media screen and (max-width:900px) {
+  #nav{
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 15px;
+  }
+ 
+
+  .available-in img{
+    /* display: none; */
+   width: 10%;
+   
+  }
+  .leftone{
+    flex-direction: column;
+    align-items: center;
+  }
+  .righttone{
+    flex-direction: column-reverse;
+  }
+  .elem{
+    min-width: 20%;
+    
+  }
+  #footer{
+
+    height: 100px;
+    padding: 20px;
+  }
+  #cards-container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+@media screen and (max-width:768px) {
+
+ 
+  #page4{
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  
+
+}
+@media screen and (max-width:580px) {
+  .leftone img{
+    width: 20px;
+    height: 20px;
+  }
+  .available-in{
+    height: 20vh;
+  }
+}
+@media screen and (max-width:580px) {
+
+  #page1 h1{
+    font-size: 5em;
+  }
 }
